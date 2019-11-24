@@ -25,8 +25,8 @@ const ClubForm = ({ clubs, setClubs, members, setMembers }) => {
       .then(response => {
         setClubs(clubs.concat(response))
         clubService.getClubs()
-          .then(initialClubs => {
-            setClubs(initialClubs)
+          .then(newClubs => {
+            setClubs(newClubs)
           })
         clubField.reset()
         memberField.reset()
@@ -45,8 +45,8 @@ const ClubForm = ({ clubs, setClubs, members, setMembers }) => {
         .then(response => {
           setMembers(members.concat(response))
           memberService.getMembers()
-            .then(initialMembers => {
-              setMembers(initialMembers)
+            .then(newMembers => {
+              setMembers(newMembers)
             })
         })
         .catch(error => console.log(error))

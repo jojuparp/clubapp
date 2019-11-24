@@ -6285,3 +6285,20 @@ shutdown request received: build/shutdown
 [0m[31m[E][0m BSP server cancelled, closing socket...
 Client in /home/joni/devel/clubapp/.bloop triggered cancellation. Cancelling tasks...
 INFO  bloop exit: 0
+INFO  time: initialize in 1.51s
+INFO  running embedded 'bloop bsp --protocol local --socket /tmp/bsp14943614267012878358/-15extesbyzcsf.socket'
+INFO  skipping build import with status 'Installed'
+The server is listening for incoming connections at local:///tmp/bsp14943614267012878358/-15extesbyzcsf.socket...
+Accepted incoming BSP client connection at local:///tmp/bsp14943614267012878358/-15extesbyzcsf.socket
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/joni/.cache/metals/bsp.trace.json
+request received: build/initialize
+INFO  time: connected to build server in 4.96s
+BSP initialization handshake complete.
+INFO  time: imported build in 0.27s
+WARN  Could not find java sources in Some(/usr/lib/jvm/java-11-openjdk-amd64). Java symbols will not be available.
+INFO  time: indexed workspace in 1.44s
+WARN  no build target: 
+Nov 24, 2019 8:24:44 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Nov 24, 2019 8:24:52 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification

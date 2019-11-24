@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 
+import clubService from '../services/clubService'
+
 const ClubsView = ({ clubs, members }) => {
 
-  const rows = () => clubs.map( club => {
+  const clubRows = () => clubs.map( club => {
 
     const clubMembers = members.filter(member => member.clubId === club.id)
 
@@ -21,7 +23,7 @@ const ClubsView = ({ clubs, members }) => {
 
     <div>
       <h2>Clubs and their members</h2>
-      {rows()}
+      {clubRows()}
     </div>
   )
 }
