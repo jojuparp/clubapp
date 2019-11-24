@@ -6249,3 +6249,21 @@ INFO  shutting down Metals
 shutdown request received: build/shutdown
 Client in /home/joni/devel/clubapp/.bloop triggered cancellation. Cancelling tasks...
 [0m[31m[E][0m BSP server cancelled, closing socket...
+INFO  time: initialize in 1.15s
+INFO  running embedded 'bloop bsp --protocol local --socket /tmp/bsp10701260428332805387/lbl6s2zr9dl8.socket'
+INFO  skipping build import with status 'Installed'
+The server is listening for incoming connections at local:///tmp/bsp10701260428332805387/lbl6s2zr9dl8.socket...
+Accepted incoming BSP client connection at local:///tmp/bsp10701260428332805387/lbl6s2zr9dl8.socket
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/joni/.cache/metals/bsp.trace.json
+request received: build/initialize
+INFO  time: connected to build server in 5.02s
+BSP initialization handshake complete.
+INFO  time: imported build in 0.28s
+WARN  Could not find java sources in Some(/usr/lib/jvm/java-11-openjdk-amd64). Java symbols will not be available.
+INFO  time: indexed workspace in 1.68s
+WARN  no build target: 
+INFO  shutting down Metals
+shutdown request received: build/shutdown
+Client in /home/joni/devel/clubapp/.bloop triggered cancellation. Cancelling tasks...
+[0m[31m[E][0m BSP server cancelled, closing socket...
+INFO  bloop exit: 0
