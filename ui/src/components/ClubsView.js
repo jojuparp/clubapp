@@ -23,7 +23,6 @@ const ClubsView = ({ clubs, members }) => {
       <h2>Clubs and their members</h2>
       {rows()}
     </div>
-
   )
 }
 

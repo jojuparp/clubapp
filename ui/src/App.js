@@ -25,11 +25,6 @@ const App = () => {
   }, [])
 
 
-
-//for debugging
-const showClubs = () => clubs.map( club => <p key={club.id}>{club.name}</p>)
-const showMembers = () => members.map( member => <p key={member.id}>{member.name}</p>)
-
   return (
     <div>
       
@@ -39,9 +34,6 @@ const showMembers = () => members.map( member => <p key={member.id}>{member.name
         members={members}
         setMembers={setMembers}
       />
-
-      {/* {showClubs()}
-      {showMembers()} */}
       
     </div>
   )

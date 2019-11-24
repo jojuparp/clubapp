@@ -31,6 +31,7 @@ const Menu = ({ clubs, setClubs, members, setMembers }) => {
           setMembers={setMembers}
           />} />
       <Route exact path='/clubs' render={() => <ClubsView clubs={clubs} members={members}/>} />
+      
     </Router>
   )
 }
