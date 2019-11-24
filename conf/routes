@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /api/clubs          controllers.ClubController.getClubs
+POST    /api/clubs          controllers.ClubController.addClub
+
+GET     /api/members        controllers.ClubController.getMembers
+POST    /api/members        controllers.ClubController.addMember
+
+GET     /api/clubs/:clubId  controllers.ClubController.getClubMembers(clubId: Int)
